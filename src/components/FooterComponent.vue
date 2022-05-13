@@ -1,6 +1,6 @@
 <template>
   <footer>
-      <div class="container clearfix">
+      <div class="container footer-main clearfix">
           <div class="cols link-cols">
               <div class="list-link">
                   <h3>DC Comics</h3>
@@ -99,7 +99,17 @@
           <div class="cols image"></div>
       </div>
       <div class="footer-bottom">
-          ciao
+          <div class="container h-100">
+                <button class="btn">SIGN-UP NOW!</button>
+                <div class="social">
+                    <h3>FOLLOW US</h3>
+                    <a href=""><img src="../assets/img/footer-facebook.png" alt=""></a>
+                    <a href=""><img src="../assets/img/footer-twitter.png" alt=""></a>
+                    <a href=""><img src="../assets/img/footer-youtube.png" alt=""></a>
+                    <a href=""><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                    <a href=""><img src="../assets/img/footer-periscope.png" alt=""></a>
+                </div>
+          </div>
       </div>
   </footer>
 </template>
@@ -111,12 +121,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/style/mixins";
+@import "../assets/style/vars";
+
 
 footer{
     height: 400px;
     background-image: url("../assets/img/footer-bg.jpg");
 
-    .container{
+    .container.footer-main{
         height: calc(100% - 80px);
         .cols{
             float: left;
@@ -152,6 +165,27 @@ footer{
         height: 80px;
         width: 100%;
         background-color: #303030;
+        .container{
+        @include space-between();
+        align-items: center;
+        .btn{
+            padding: 8px 13px;
+            border-radius: 0px;
+            border: 1px solid $brand-color;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .social{
+            display: flex;
+            align-items: center;
+            color: $brand-color;
+            img{
+                padding: 0 10px;
+            }
+        }
+        }
     }
 }
 
