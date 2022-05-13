@@ -1,0 +1,9 @@
+@mixin space-between() {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin header-menu() {
+    @include space-between();
+    align-items: center;
+}
