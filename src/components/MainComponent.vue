@@ -1,6 +1,9 @@
 <template>
   <main>
-      M
+      <div class="container">
+          <h3>--> Content goes here</h3>
+      </div>
+      
   </main>
 </template>
 
@@ -11,5 +14,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+main{
+    height: 100px; // DA TOGLIERE !
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    align-items: center;
+}
 
 </style>
