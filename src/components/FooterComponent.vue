@@ -115,8 +115,10 @@
 </template>
 
 <script>
+
+
 export default {
-    name: 'FooterComponent'
+    name: "FooterComponent",
 }
 </script>
 
@@ -169,13 +171,9 @@ footer{
         @include space-between();
         align-items: center;
         .btn{
-            padding: 8px 13px;
-            border-radius: 0px;
+            @include btn();
             border: 1px solid $brand-color;
             background-color: transparent;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
         }
         .social{
             display: flex;

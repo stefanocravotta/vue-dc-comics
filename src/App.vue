@@ -19,13 +19,14 @@ import IconComponent from './components/IconComponent.vue';
 import MainComponent from "./components/MainComponent.vue";
 
 
+
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    IconComponent
+    IconComponent,
 }
 }
 </script>
